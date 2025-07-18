@@ -44,10 +44,4 @@ let number = 64;
 let sqrtNumber = Math.sqrt(number);
 console.log("Квадратний корінь з", number, ":", sqrtNumber);
 
-//  ex. 9.
-const integer = 42;
-const stringNumber = "256";
-let convertedInt = parseInt(stringNumber);
-let convertedString = integer.toString();
-console.log("Рядок '256' в число:", convertedInt);
-console.log("Число 42 в рядок:", convertedString);
+
