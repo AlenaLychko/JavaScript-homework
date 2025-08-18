@@ -1,5 +1,5 @@
 //1
-let nums = 1;
+const nums = 1;
 while (nums <= 10) {
   console.log(nums);
   nums++;
@@ -14,7 +14,7 @@ for (let j = 2; j <= 20; j++) {
 
 //3
 //4
-let n = 9;
+const n = 9;
 for (let p = 6; p <= 20; p++) {
   if (p >= n) {
     console.log(p);
