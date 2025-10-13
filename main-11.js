@@ -1,0 +1,70 @@
+// const BankAccount = {
+//   ownerAccount: "Daria Bova",
+//   accountNumber: "123456789",
+//   balance: 1000,
+
+//   deposit(amount) {
+//     this.balance += amount;
+//     prompt(
+//       `You have topped up your account with: ${amount}$., Remainder: ${this.balance}$.`
+//     );
+//   },
+
+//   withdraw(amount) {
+//     if (amount > this.balance) {
+//       prompt("There are not enough funds in the account!");
+//     } else {
+//       this.balance -= amount;
+//       prompt(`You have withdrawn${amount}$. , reminder:${this.balance}$.`);
+//     }
+//   },
+// };
+
+// if (
+//   confirm(
+//     "Do you want to top up your account? (OK - Yes, Cancel - withdraw money)"
+//   )
+// ) {
+//   const amount = Number(prompt("enter the amount to top up:"));
+//   BankAccount.deposit(amount);
+// } else {
+//   const amount = Number(prompt("Enter the amount to withdraw:"));
+// }
+// BankAccount.withdraw(amount);
+
+// //ex2
+
+// const weather = {
+//   temperature: 13,
+//   humidity: 20,
+//   windspeed: 8,
+
+//   lowerTemperature() {
+//     return this.temperature < 0;
+//   },
+// };
+// weather.temperature = Number(prompt("enter the temperature (°C):"));
+
+// if (weather.lowerTemperature()) {
+//   prompt("the temperature is lower than 0°C COLD");
+// } else {
+//   prompt("the temparature is above equal to 0°C");
+// }
+
+//ex 3
+
+const user = {
+  name: "Daria",
+  email: "daria.bova@gmail.com",
+  password: "3424343",
+
+  login() {
+    const yourEmail = prompt("enter your email:");
+    const yourPasssword = prompt("enter your password:");
+    if (yourEmail === this.email && yourPassword === this.password) {
+      prompt("Login successful! ");
+    } else {
+      prompt("Incorrect email or password ");
+    }
+  },
+};
