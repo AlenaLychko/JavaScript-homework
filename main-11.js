@@ -46,9 +46,9 @@
 // weather.temperature = Number(prompt("enter the temperature (°C):"));
 
 // if (weather.lowerTemperature()) {
-//   prompt("the temperature is lower than 0°C COLD");
+//   console.log("the temperature is lower than 0°C COLD");
 // } else {
-//   prompt("the temparature is above equal to 0°C");
+//  console.log("the temparature is above equal to 0°C");
 // }
 
 //ex 3
@@ -62,9 +62,33 @@ const user = {
     const yourEmail = prompt("enter your email:");
     const yourPasssword = prompt("enter your password:");
     if (yourEmail === this.email && yourPassword === this.password) {
-      prompt("Login successful! ");
+      console.log("login successful! ");
     } else {
-      prompt("Incorrect email or password ");
+      console.log("Incorrect email or password ");
     }
   },
 };
+
+//ex 4
+const movie = {
+  title: "Terrifier",
+  director: "Damien Leone",
+  year: "2016",
+  rating: "5,5",
+
+  highRating() {
+     return this.rating > 8;
+  },
+};
+
+
+console.log("title:", movie.title);
+console.log("director:", movie.director);
+console.log("year:", movie.year);
+console.log("raeting:", movie.rating);
+
+if (movie.highRating()) {
+  console.log("The movie has a high rating ");
+} else {
+  console.log("Movie rating 8 or below");
+}
