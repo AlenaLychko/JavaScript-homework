@@ -32,3 +32,29 @@ const liElements = ingredients.map((ingredients) => {
 ul.append(...liElements);
 
 //ex 3
+//ex4
+
+let counterValue = 0;
+
+const valueEl = document.getElementById("value");
+const button = document.querySelectorAll("#counter button");
+
+function updateDisplay() {
+  valueEl.textContent = counterValue;
+}
+
+button.forEach((button) => {
+  button.addEventListener("click", () => {
+    const action = button.dataset.action;
+
+    if (action === "increment") {
+      counterValue += 1;
+    } else if (action === "decrement") {
+      counterValue -= 1;
+    }
+
+    updateDisplay();
+  });
+});
+
+updateDisplay();
